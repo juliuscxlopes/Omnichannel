@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 // redisClient.js
-=======
-
-// omnichannel/database/services/redisClient.js
->>>>>>> 3f6ee19 (Commit do seculo)
 const Redis = require('ioredis');
 
 // Conectar ao Redis usando a URL fornecida pelas variáveis de ambiente

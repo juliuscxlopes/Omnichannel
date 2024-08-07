@@ -31,7 +31,3 @@ const createTicket = async (contact) => {
 module.exports = {
   createTicket,
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> 3f6ee19 (Commit do seculo)
