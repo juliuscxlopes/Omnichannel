@@ -1,5 +1,5 @@
 //databaseService.js
-const db = require('./postgresql/pgClient');
+const db = require('../postgresql/pgClient');
 
 // Criar uma nova conversa do WhatsApp
 const createWhatsAppConversation = async (data) => {

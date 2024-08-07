@@ -20,17 +20,3 @@ router.put('/:cnpj', dataBaseController.updateWhatsAppConversation);
 router.delete('/:cnpj', dataBaseController.deleteWhatsAppConversation);
 
 module.exports = router;
-
-
-
-database    
-    - controlers
-        - databaseControlers.js
-    - migrations
-    - postgrsql
-        -pgClient
-    - routes
-        -databaseRoutes.js
-    - seeds
-    - services
-        - databaseRoutes.js
