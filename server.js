@@ -18,7 +18,7 @@ app.use('/webhook/whatsapp', webhookRoutes); // Rota para o WhatsApp
 //app.use('/webhook/messenger', messengerRoutes); // Rota para o Messenger
 
 //Base de dados
-app.use('webhook/whatsapp/database', databaseRoutes);
+app.use('webhook/database', databaseRoutes);
 
 
 app.listen(port, () => {
