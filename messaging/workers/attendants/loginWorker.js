@@ -1,4 +1,4 @@
-const { getChannel } = require('../../config/rabbitMQConfig');
+const { getChannel, connectRabbitMQ } = require('../../config/rabbitMQConfig');  // Importa também a função connectRabbitMQ
 const attendantService = require('../../../database/services/tableattendants');
 
 const processLoginMessage = async (message) => {
@@ -29,7 +29,7 @@ const processLoginMessage = async (message) => {
 
 const startLoginWorker = async () => {
   try {
-    await connectRabbitMQ();
+    await connectRabbitMQ();  // Certifica-se de que a conexão com RabbitMQ está estabelecida
     const channel = getChannel();
     await channel.assertQueue('loginQueue', { durable: true });
     console.log('Worker loginQueue iniciado. Aguardando mensagens...');
