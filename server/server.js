@@ -3,8 +3,8 @@ const dotenv = require('dotenv');
 const webhookRoutes = require('./routes/chatbotsRoutes/webhookRoutes');
 const dbwhatsappchat = require('./queueMessage/whatsappQueue/dbwhatsappchat');
 const { connectRabbitMQ } = require('../messaging/config/rabbitMQConfig');
-const { setupAttendantsQueue } = require('./queueMessage/attendantsQueue/attendantsQueue');
-const { setupLoginQueue } = require('./queueMessage/attendantsQueue/loginQueue');
+const  setupAttendantsQueue = require('./queueMessage/attendantsQueue/attendantsQueue');
+const  setupLoginQueue = require('./queueMessage/attendantsQueue/loginQueue');
 // Load environment variables
 dotenv.config();
 
